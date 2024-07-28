@@ -1,0 +1,220 @@
+:root {
+    --fuente-poppins: "Poppins", sans-serif;
+    --fuente-lato: "Lato", sans-serif;
+    --fuente-sourcecodepro: "Source Code Pro", sans-serif;
+    --color-uno: #F7EDE2;
+    --color-dos: #F5CAC3;
+    --color-tres: #F6BD60;
+    --color-cuatro: #F28482;
+    --color-cinco: #84A59D;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: white;
+    font-family: var(--fuente-poppins);
+    color: var(--color-cinco);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+}
+
+/* Botones */
+
+.boton_encr, .boton_des, .boton_cop, .boton_borrar {
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: var(--color-tres);
+    transition: box-shadow 0.3s ease-in-out;
+    font-family: var(--fuente-poppins);
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.boton_encr:hover, .boton_des:hover {
+    box-shadow: 0px 8px 16px var(--color-dos);
+    background-color: var(--color-dos);
+}
+
+.boton_cop, .boton_borrar {
+    padding: 0.3rem 1.5rem;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.boton_cop:hover, .boton_borrar:hover {
+    box-shadow: 0px 8px 16px var(--color-dos);
+    background-color: var(--color-cinco);
+}
+
+/* Imágenes */
+
+.imgsalida, #nuevaImagen {
+    width: 50%;
+    max-width: 50%;
+    height: auto;
+    margin: 2rem;
+    margin-left: 6rem;
+}
+
+.img__alert {
+    margin-right: 10px;
+}
+
+.div__ingsal {
+    display: flex;
+    padding: 1rem;
+    margin: auto;
+    width: 100%;
+}
+
+/* Ingreso de texto */
+
+.section__ingreso__txt {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+.entrada__texto {
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.txtareaing {
+    background-color: var(--color-uno);
+    width: 100%;
+    height: 25vh;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-family: var(--fuente-sourcecodepro);
+    resize: none;
+    color: var(--color-cinco);
+}
+
+.txtareaing::placeholder {
+    color: var(--color-cinco);
+}
+
+.alerta {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 1rem;
+}
+
+.ingresar__texto__parrafo {
+    margin: 0;
+}
+
+/* Salida de texto */
+
+.section__salida__txt {
+    width: 39%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--color-cinco) 0 0 0.5rem;
+    border-radius: 0.3rem;
+    padding: 1.5rem;
+    margin-left: auto;
+    margin-right: 3rem;
+    position: relative; /* Necesario para el posicionamiento del nuevo contenido */
+}
+
+.txt__salida {
+    text-align: center;
+    width: 100%;
+}
+
+.txtareasal {
+    width: 25rem;
+    height: 20vh;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid beige;
+    resize: none;
+    color: var(--color-cinco);
+    background-color: var(--color-uno);
+    font-family: var(--fuente-sourcecodepro);
+}
+
+h2, p {
+    margin: 0;
+}
+
+.footer {
+    width: 100%;
+    background-color: var(--color-cinco);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+}
+
+.botones__salida {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center; 
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .imgsalida, #nuevaImagen {
+        display: none; /* Oculta las imágenes en pantallas de hasta 768px */
+    }
+
+    .div__ingsal {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .section__ingreso__txt, .section__salida__txt {
+        width: 80%;
+        margin: 1rem 0;
+    }
+
+    .txtareaing, .txtareasal {
+        width: 100%;
+    }
+
+    .botones__salida {
+        flex-direction: column; /* Alinea los botones verticalmente en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .section__ingreso__txt, .section__salida__txt {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .txtareaing, .txtareasal {
+        width: 100%;
+    }
+
+    .botones__salida {
+        flex-direction: column; /* Alinea los botones verticalmente en móviles */
+    }
+}

@@ -20,8 +20,8 @@
                 <p class="ingresar__texto__parrafo">Sólo letras minúsculas y sin acentos</p> 
             </div>
             <div class="div__botones">
-                <button class="boton_encr" onclick="encryptText()">Encriptar</button>
-                <button class="boton_des" onclick="decryptText()">Desencriptar</button>
+                <button class="boton_encr" onclick="encriptarTxt()">Encriptar</button>
+                <button class="boton_des" onclick="desencriptarTxt()">Desencriptar</button>
             </div>
         </section>
         <!-- Salida de texto -->
@@ -35,8 +35,8 @@
                 <img src="assets/nueva-imagen.png" alt="Nueva imagen" id="nuevaImagen" style="display:none;">
                 <textarea class="txtareasal" id="SalidaTexto" readonly placeholder="El texto encriptado o desencriptado aparecerá aquí"></textarea>
                 <div class="botones__salida">
-                    <button class="boton_cop" onclick="copyText()">Copiar</button>
-                    <button class="boton_borrar" id="borrarButton" onclick="resetEncryptor()">Borrar</button>
+                    <button class="boton_cop" onclick="copiarTxt()">Copiar</button>
+                    <button class="boton_borrar" id="borrarButton" onclick="resetEncriptador()">Borrar</button>
                 </div>
             </div>
         </section>

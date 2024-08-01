@@ -1,1 +1,17 @@
-Primer commit
+# Challenge Encriptador de texto
+
+## Descripción 
+Proyecto realizado como desafío en Alura LATAM. Encriptador de texto desarrollado con HTML, CSS y JavaScript.
+Permite encriptar y desencriptar texto, como así también, copiar el resultado o reset el programa. 
+
+## Puntos claves
+La letra "e" es convertida para "enter"
+La letra "i" es convertida para "imes"
+La letra "a" es convertida para "ai"
+La letra "o" es convertida para "ober"
+La letra "u" es convertida para "ufat"
+
+## Autor 
+Leticia Malvina Palmero
+
+###

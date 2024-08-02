@@ -46,3 +46,4 @@ function resetEncriptador() {
     document.getElementById('nuevaImagen').style.display = 'none';
     document.querySelector('.botones__salida').style.display = 'none';
 }
+

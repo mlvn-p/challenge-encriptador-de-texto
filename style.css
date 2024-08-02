@@ -63,7 +63,7 @@ main {
 /* Imágenes */
 .img__salida{
     text-align: center;
-   
+    display: block;
 }
 
 .imgsalida, #nuevaImagen {

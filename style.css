@@ -61,9 +61,13 @@ main {
 }
 
 /* Imágenes */
+.img__salida{
+    text-align: center;
+   
+}
 
 .imgsalida, #nuevaImagen {
-    width: 100%;
+    width: 50%;
     max-width: 55%;
     height: auto;
     margin: auto;

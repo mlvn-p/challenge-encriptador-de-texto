@@ -31,11 +31,14 @@
             <div class="txt__salida">
                 <h2 id="mensajeInicial">No se encontró ningún mensaje</h2>
                 <p id="mensajeDescripcion">Ingrese el texto que desee encriptar o desencriptar</p>
+            </div>
+            <div class="img__salida"> 
                 <img class="imgsalida" src="assets/gato.png" alt="imagen de un gato" id="imagenSalida">
+                <img src="assets/nueva-imagen.png" alt="Nueva imagen" id="nuevaImagen" style="display:none;">
             </div>
             <div class="salida__texto">
-                <img src="assets/nueva-imagen.png" alt="Nueva imagen" id="nuevaImagen" style="display:none;">
                 <textarea class="txtareasal" id="SalidaTexto" readonly placeholder="El texto encriptado o desencriptado aparecerá aquí"></textarea>
+            
                 <div class="botones__salida">
                     <button class="boton_cop" onclick="copiarTxt()">Copiar</button>
                     <button class="boton_borrar" id="borrarButton" onclick="resetEncriptador()">Borrar</button>
